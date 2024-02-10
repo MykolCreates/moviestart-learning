@@ -6,6 +6,7 @@ import { Text, View } from 'react-native';
 const Layout = () => {
   return (
     <Drawer
+      // initialRouteName="home"
       screenOptions={{
         headerShown: true,
         drawerHideStatusBarOnOpen: true,
@@ -14,7 +15,7 @@ const Layout = () => {
         drawerLabelStyle: { marginLeft: -20 },
       }}>
       <Drawer.Screen
-        name="(home)"
+        name="home"
         options={{
           title: 'Moviestar',
           headerShown: false,
@@ -22,7 +23,7 @@ const Layout = () => {
         }}
       />
       <Drawer.Screen
-        name="(favorites)"
+        name="favorites"
         options={{
           title: 'Favorites',
           headerShown: false,
