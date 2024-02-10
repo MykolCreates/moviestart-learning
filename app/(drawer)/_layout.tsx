@@ -6,7 +6,6 @@ import { Text, View } from 'react-native';
 const Layout = () => {
   return (
     <Drawer
-      // initialRouteName="home"
       screenOptions={{
         headerShown: true,
         drawerHideStatusBarOnOpen: true,

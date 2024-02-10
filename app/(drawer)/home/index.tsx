@@ -1,4 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
+import { StatusBar } from 'expo-status-bar';
 import { useEffect, useState } from 'react';
 import { ImageBackground, StyleSheet } from 'react-native';
 import { Input, ScrollView, Spinner, YStack } from 'tamagui';
@@ -31,6 +32,7 @@ const Page = () => {
 
     return (
         <Main>
+            <StatusBar style="light" />
             <ImageBackground
                 source={{
                     uri: 'https://media.themoviedb.org/t/p/w1920_and_h600_multi_faces/ctMserH8g2SeOAnCw5gFjdQF8mo.jpg',
