@@ -1,15 +1,12 @@
 import { useLocalSearchParams } from 'expo-router';
-import { View, Text } from 'react-native';
-import { useLabelContext } from 'tamagui';
+
+import DetailsPage from '~/components/DetailsPage';
+import { MediaType } from '~/interfaces/apiresult';
 
 const Page = () => {
-    const { id } = useLocalSearchParams<{id:string}>();
-    console.log("🚀 ~ Page ~ id:", id)
-  return (
-    <View>
-      <Text>Page</Text>
-    </View>
-  );
+    const { id } = useLocalSearchParams<{ id: string }>();
+    console.log('🚀 ~ Page ~ id:', id);
+    return <DetailsPage id={id} mediaType={MediaType.Movie} />;
 };
 
 export default Page;

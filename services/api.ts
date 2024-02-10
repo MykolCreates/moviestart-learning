@@ -1,4 +1,4 @@
-import { MediaType, TrendingResults } from '~/interfaces/apiresult';
+import { MediaType, Result, TrendingResults } from '~/interfaces/apiresult';
 
 const API_KEY = process.env.EXPO_PUBLIC_API_KEY;
 
